@@ -3,7 +3,7 @@
 namespace kaleidoscope {
 bool CapsLock_::capsCleanupDone = true;
 bool CapsLock_::capsState = false;
-cRGB activeModeColor = CRGB(255, 0, 0);
+cRGB activeModeColor = CRGB(0, 0, 255);
 
 void CapsLock_::begin(void) {
   capsState = !!(kaleidoscope::hid::getKeyboardLEDs() & LED_CAPS_LOCK);
